@@ -1,0 +1,22 @@
+{
+  "name": "@ccflow/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/server.js",
+  "bin": {
+    "ccflow": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/server.ts"
+  },
+  "dependencies": {
+    "@ccflow/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.2",
+    "tsx": "^4.21.0",
+    "typescript": "~6.0.2"
+  }
+}
