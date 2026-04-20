@@ -126,9 +126,9 @@ for (const arg of args) {
 function printHelp() {
   const v = getVersion()
   console.log(`
-  ${bold('ccflow')} ${dim(`v${v}`)} — Dashboard for Claude Code sessions
+  ${bold('cclens')} ${dim(`v${v}`)} — Dashboard for Claude Code sessions
 
-  ${bold('Usage:')} ccflow [command] [options]
+  ${bold('Usage:')} cclens [command] [options]
 
   ${bold('Commands:')}
     ${cyan('serve')}       Start the dashboard server ${dim('(default)')}
@@ -149,11 +149,11 @@ function printHelp() {
     -v, --version Show version
 
   ${bold('Examples:')}
-    ${dim('$')} ccflow                    ${dim('Start dashboard on default port')}
-    ${dim('$')} ccflow --port 8080        ${dim('Start on custom port')}
-    ${dim('$')} ccflow sessions           ${dim('List recent sessions')}
-    ${dim('$')} ccflow stats              ${dim('Show token usage')}
-    ${dim('$')} ccflow config --path      ${dim('Print config file path')}
+    ${dim('$')} cclens                    ${dim('Start dashboard on default port')}
+    ${dim('$')} cclens --port 8080        ${dim('Start on custom port')}
+    ${dim('$')} cclens sessions           ${dim('List recent sessions')}
+    ${dim('$')} cclens stats              ${dim('Show token usage')}
+    ${dim('$')} cclens config --path      ${dim('Print config file path')}
 `)
 }
 
@@ -306,7 +306,7 @@ switch (command) {
             `  ${red('Error:')} Ports ${bold(String(port))}\u2013${bold(String(port + MAX_PORT_RETRIES))} are all in use.`,
           )
           console.error(
-            `  ${dim('Try:')} ${cyan(`ccflow --port ${port + MAX_PORT_RETRIES + 1}`)}`,
+            `  ${dim('Try:')} ${cyan(`cclens --port ${port + MAX_PORT_RETRIES + 1}`)}`,
           )
         } else {
           console.error(`  ${red('Error:')} ${err.message}`)

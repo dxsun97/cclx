@@ -1,10 +1,10 @@
 {
-  "name": "cc-flow",
+  "name": "cclens",
   "version": "0.1.0",
   "description": "Dashboard for visualizing Claude Code session data",
   "type": "module",
   "bin": {
-    "ccflow": "packages/server/dist/cli.js"
+    "cclens": "packages/server/dist/cli.js"
   },
   "files": [
     "packages/server/dist/",
@@ -13,12 +13,12 @@
   ],
   "scripts": {
     "dev": "pnpm run --parallel -r dev",
-    "dev:web": "pnpm --filter @ccflow/web dev",
-    "dev:server": "pnpm --filter @ccflow/server dev",
+    "dev:web": "pnpm --filter @cclens/web dev",
+    "dev:server": "pnpm --filter @cclens/server dev",
     "build": "pnpm run -r build",
-    "build:shared": "pnpm --filter @ccflow/shared build",
-    "build:server": "pnpm --filter @ccflow/server build",
-    "build:web": "pnpm --filter @ccflow/web build",
+    "build:shared": "pnpm --filter @cclens/shared build",
+    "build:server": "pnpm --filter @cclens/server build",
+    "build:web": "pnpm --filter @cclens/web build",
     "typecheck": "tsc -b",
     "lint": "eslint .",
     "format": "prettier --write .",

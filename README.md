@@ -1,18 +1,18 @@
-# Claude Flow
+# CCLens
 
 A dashboard for visualizing Claude Code session data. Browse sessions, view conversation timelines, analyze token usage, inspect tool calls, and stream live sessions.
 
 ## Quick Start
 
 ```
-npx ccflow
+npx cclens
 ```
 
 Or install globally:
 
 ```
-npm install -g ccflow
-ccflow
+npm install -g cclens
+cclens
 ```
 
 Opens at http://localhost:3179 automatically.
@@ -29,47 +29,47 @@ Opens at http://localhost:3179 automatically.
 
 ## CLI Usage
 
-### `ccflow` / `ccflow serve`
+### `cclens` / `cclens serve`
 
 Start the dashboard server (default command).
 
 ```
-ccflow                   # Start with defaults
-ccflow --port 8080       # Custom port (default: 3179)
-ccflow --no-open         # Don't auto-open browser
+cclens                   # Start with defaults
+cclens --port 8080       # Custom port (default: 3179)
+cclens --no-open         # Don't auto-open browser
 ```
 
-### `ccflow sessions` / `ccflow ls`
+### `cclens sessions` / `cclens ls`
 
 List recent sessions.
 
 ```
-ccflow sessions
+cclens sessions
 ```
 
-### `ccflow stats`
+### `cclens stats`
 
 Show token usage summary.
 
 ```
-ccflow stats
+cclens stats
 ```
 
-### `ccflow config`
+### `cclens config`
 
 Manage configuration.
 
 ```
-ccflow config            # Show current config
-ccflow config --path     # Print config file path
-ccflow config --reset    # Reset config to defaults
+cclens config            # Show current config
+cclens config --path     # Print config file path
+cclens config --reset    # Reset config to defaults
 ```
 
 ### General
 
 ```
-ccflow --help            # Show help
-ccflow --version         # Show version
+cclens --help            # Show help
+cclens --version         # Show version
 ```
 
 ## Configuration
@@ -114,9 +114,9 @@ pnpm start
 ```
 claude-flow/
   packages/
-    shared/    @ccflow/shared   - Shared types and utilities
-    server/    @ccflow/server   - Node.js HTTP server + CLI
-    web/       @ccflow/web      - React frontend (Vite)
+    shared/    @cclens/shared   - Shared types and utilities
+    server/    @cclens/server   - Node.js HTTP server + CLI
+    web/       @cclens/web      - React frontend (Vite)
 ```
 
 ## Tech Stack

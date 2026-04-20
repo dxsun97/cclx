@@ -1,1 +1,1 @@
-export type { DashboardStats } from '@ccflow/shared'
+export type { DashboardStats } from '@cclens/shared'

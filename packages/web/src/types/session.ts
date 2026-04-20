@@ -1,1 +1,1 @@
-export * from '@ccflow/shared'
+export * from '@cclens/shared'

@@ -9,7 +9,7 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
       // Resolve shared package to source for instant HMR during development
-      '@ccflow/shared': path.resolve(__dirname, '../shared/src'),
+      '@cclens/shared': path.resolve(__dirname, '../shared/src'),
     },
   },
 })

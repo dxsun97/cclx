@@ -8,7 +8,7 @@ import type {
   ProjectInfo,
   SessionInfo,
   DashboardStats,
-} from '@ccflow/shared'
+} from '@cclens/shared'
 
 // --- Native HTTP utilities ---
 
@@ -812,6 +812,6 @@ const isDirectRun =
 
 if (isDirectRun) {
   startServer().then(({ port }) => {
-    console.log(`Claude Flow API running at http://localhost:${port}`)
+    console.log(`CCLens API running at http://localhost:${port}`)
   })
 }
