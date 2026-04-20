@@ -1,10 +1,10 @@
 {
-  "name": "cclens",
+  "name": "cclx",
   "version": "0.1.0",
   "description": "Dashboard for visualizing Claude Code session data",
   "type": "module",
   "bin": {
-    "cclens": "packages/server/dist/cli.js"
+    "cclx": "packages/server/dist/cli.js"
   },
   "files": [
     "packages/server/dist/",
@@ -13,12 +13,12 @@
   ],
   "scripts": {
     "dev": "pnpm run --parallel -r dev",
-    "dev:web": "pnpm --filter @cclens/web dev",
-    "dev:server": "pnpm --filter @cclens/server dev",
+    "dev:web": "pnpm --filter @cclx/web dev",
+    "dev:server": "pnpm --filter @cclx/server dev",
     "build": "pnpm run -r build",
-    "build:shared": "pnpm --filter @cclens/shared build",
-    "build:server": "pnpm --filter @cclens/server build",
-    "build:web": "pnpm --filter @cclens/web build",
+    "build:shared": "pnpm --filter @cclx/shared build",
+    "build:server": "pnpm --filter @cclx/server build",
+    "build:web": "pnpm --filter @cclx/web build",
     "typecheck": "tsc -b",
     "lint": "eslint .",
     "format": "prettier --write .",

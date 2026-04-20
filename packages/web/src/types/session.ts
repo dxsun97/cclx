@@ -1,1 +1,1 @@
-export * from '@cclens/shared'
+export * from '@cclx/shared'

@@ -1,18 +1,18 @@
-# CCLens
+# CCLX
 
 A dashboard for visualizing Claude Code session data. Browse sessions, view conversation timelines, analyze token usage, inspect tool calls, and stream live sessions.
 
 ## Quick Start
 
 ```
-npx cclens
+npx cclx
 ```
 
 Or install globally:
 
 ```
-npm install -g cclens
-cclens
+npm install -g cclx
+cclx
 ```
 
 Opens at http://localhost:3179 automatically.
@@ -29,47 +29,47 @@ Opens at http://localhost:3179 automatically.
 
 ## CLI Usage
 
-### `cclens` / `cclens serve`
+### `cclx` / `cclx serve`
 
 Start the dashboard server (default command).
 
 ```
-cclens                   # Start with defaults
-cclens --port 8080       # Custom port (default: 3179)
-cclens --no-open         # Don't auto-open browser
+cclx                   # Start with defaults
+cclx --port 8080       # Custom port (default: 3179)
+cclx --no-open         # Don't auto-open browser
 ```
 
-### `cclens sessions` / `cclens ls`
+### `cclx sessions` / `cclx ls`
 
 List recent sessions.
 
 ```
-cclens sessions
+cclx sessions
 ```
 
-### `cclens stats`
+### `cclx stats`
 
 Show token usage summary.
 
 ```
-cclens stats
+cclx stats
 ```
 
-### `cclens config`
+### `cclx config`
 
 Manage configuration.
 
 ```
-cclens config            # Show current config
-cclens config --path     # Print config file path
-cclens config --reset    # Reset config to defaults
+cclx config            # Show current config
+cclx config --path     # Print config file path
+cclx config --reset    # Reset config to defaults
 ```
 
 ### General
 
 ```
-cclens --help            # Show help
-cclens --version         # Show version
+cclx --help            # Show help
+cclx --version         # Show version
 ```
 
 ## Configuration
@@ -114,9 +114,9 @@ pnpm start
 ```
 claude-flow/
   packages/
-    shared/    @cclens/shared   - Shared types and utilities
-    server/    @cclens/server   - Node.js HTTP server + CLI
-    web/       @cclens/web      - React frontend (Vite)
+    shared/    @cclx/shared   - Shared types and utilities
+    server/    @cclx/server   - Node.js HTTP server + CLI
+    web/       @cclx/web      - React frontend (Vite)
 ```
 
 ## Tech Stack
