@@ -29,11 +29,11 @@
   "author": "dxsun97",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dxsun97/claude-flow"
+    "url": "https://github.com/dxsun97/ccsight"
   },
-  "homepage": "https://github.com/dxsun97/claude-flow#readme",
+  "homepage": "https://github.com/dxsun97/ccsight#readme",
   "bugs": {
-    "url": "https://github.com/dxsun97/claude-flow/issues"
+    "url": "https://github.com/dxsun97/ccsight/issues"
   },
   "engines": {
     "node": ">=18"
